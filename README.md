@@ -11,51 +11,66 @@ The goal is to transform raw transaction data into clear business insights throu
 - Dataset: [Online Retail (UCI Machine Learning Repository)](https://archive.ics.uci.edu/ml/datasets/online+retail)  
 - Raw format: CSV containing invoice-level transactions.  
 
-- Original Dataset viewed in LibreOffice
+Original Dataset viewed in LibreOffice
   
-![screenshot of raw CSV](Screenshots/.png)
+![screenshot of raw CSV](Screenshots/original_data_libre_office.png)
 
 ---
 
 ### 2. Data Preparation in PostgreSQL
 I used **psql** shell to load the dataset into a PostgreSQL database, then created summary tables/CSVs for Tableau.
 
-- **Monthly Revenue**
-- **Average Order Size by Month**
-- **Top 10 Countries by Revenue**
-- **Top 10 Products by Revenue**
+I had to reformat the invoicedate column in order to extract just the year and month to use in the analysis.
 
-SQL example:
+Original table structure used to upload the csv.
 
-```sql
-SELECT DATE_TRUNC('month', invoicedate) AS month,
-       ROUND(SUM(quantity * unitprice), 2) AS revenue
-FROM retail
-GROUP BY month
-ORDER BY month;
+![screenshot of raw CSV](Screenshots/psql_original_table.png)
 
-3. Exported Data
-The queries above were exported into 4 CSV files for Tableau:
+Snapshot of dataset with added formatted date and yearmonth columns to use in monthly revenue and average order size csv's.
 
-monthly_revenue.csv
+![screenshot of raw CSV](Screenshots/psql_table_with_timestamp_and_yearmonth.png)
 
-average_order_size.csv
+Monthly Revenue Query
 
-top_countries_revenue.csv
+![screenshot of raw CSV](Screenshots/psql_revenue_by_month.png)
 
-top_products_revenue.csv
+Average Order Size Query
+  
+![screenshot of raw CSV](Screenshots/psql_average_order_size.png)
 
+Top 10 Countries by Revenue Query
+  
+![screenshot of raw CSV](Screenshots/psql_country_by_revenue.png)
+
+Top 10 Products by Revenue Query
+  
+![screenshot of raw CSV](Screenshots/psql_product_by_revenue.png)
+
+### 3. Exported Data
+The queries above were exported into 4 CSV files for Tableau using the \copy function inside the psql shell.
+
+Example output:  monthly_revenue.csv viewed in LibreOffice
+
+![screenshot of raw CSV](Screenshots/monthly_revenue.png)
 
 4. Tableau Visualizations
 The CSVs were imported into Tableau to build interactive charts:
 
 Monthly Revenue (Line Chart)
 
+![screenshot of raw CSV](Screenshots/Monthly Revenue Graph.png)
+
 Top 10 Products by Revenue (Bar Chart)
+
+![screenshot of raw CSV](Screenshots/Revenue by Product Graph.png)
 
 Top 10 Countries by Revenue (Bar Chart, excluding UK in KPI calc)
 
+![screenshot of raw CSV](Screenshots/Countries by Revenue Graph.png)
+
 Average Order Value (Line Chart)
+
+![screenshot of raw CSV](Screenshots/Average Order Total.png)
 
 
 5. KPI Dashboard
