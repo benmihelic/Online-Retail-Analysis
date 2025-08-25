@@ -3,7 +3,7 @@
 ---
 ## Project Overview
 
-This project analyzes an [Online Retail dataset](https://archive.ics.uci.edu/ml/datasets/online+retail) to uncover revenue trends, customer behavior, and sales performance across products and countries. Using **PostgreSQL** for data preparation and **Tableau** for visualization, I created an interactive dashboard highlighting key performance indicators (KPIs) and business insights.
+This project analyzes an online retail dataset to uncover revenue trends, customer behavior, and sales performance across products and countries. Using **PostgreSQL** for data preparation and **Tableau** for visualization, I created an interactive dashboard highlighting key performance indicators (KPIs) and business insights.
 
 The goal of this project is to demonstrate my ability to:
 
