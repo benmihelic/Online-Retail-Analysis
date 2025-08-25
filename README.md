@@ -11,8 +11,9 @@ The goal is to transform raw transaction data into clear business insights throu
 - Dataset: [Online Retail (UCI Machine Learning Repository)](https://archive.ics.uci.edu/ml/datasets/online+retail)  
 - Raw format: CSV containing invoice-level transactions.  
 
-#### Original Dataset viewed in LibreOffice
-![screenshot of raw CSV](path/to/screenshot.png)
+- Original Dataset viewed in LibreOffice
+  
+![screenshot of raw CSV](Screenshots/.png)
 
 ---
 
