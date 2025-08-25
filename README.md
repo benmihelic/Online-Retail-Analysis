@@ -16,18 +16,18 @@ The goal of this project is to demonstrate my ability to:
 View the full interactive Tableau dashboard here:  
 [Tableau Public – Online Retail Dashboard](https://public.tableau.com/app/profile/ben.mihelic/viz/OnlineRetailAnalysis_17558674772550)
 
-
 ---
 
-
-
-## ⚙️ Tools & Technologies
+## Tools & Technologies
 
 - **Dataset:** [UCI Machine Learning Repository – Online Retail Dataset](https://archive.ics.uci.edu/ml/datasets/online+retail)  
 - **PostgreSQL (psql shell):** data cleaning, joins, aggregation  
 - **SQL:** grouping, filtering, creating CSV extracts  
 - **Tableau Public:** visualization and dashboard design  
-- **GitHub:** project documentation and portfolio publishing  
+- **GitHub:** project documentation and portfolio publishing
+
+---
+
 ## Project Workflow
 
 ### 1. Data Source
@@ -87,31 +87,17 @@ The CSVs were imported into Tableau to build interactive charts:
 
 ![screenshot of raw CSV](Screenshots/Countries_by_Revenue_Graph.png)
 
-
 ### 5. Key Performance Indicator (KPI) Dashboard
 Created a dashboard with 6 key KPIs across the top:
 
 Total Revenue, Average Order Size, Average Monthly Revenue, Total Orders, Average Country Revenue (excluding UK), Average Product Revenue
 
-Reference lines were added to highlight averages.
+Additionally, reference lines were added to highlight averages.
 
 Final Dashboard:
 
 ![screenshot of raw CSV](Screenshots/Final_Product.png)
 
+---
 
-
-🚀 Key Insights
-Revenue is highly concentrated in the UK, so global averages were recalculated excluding it.
-
-Seasonal patterns appear in monthly revenue trends.
-
-A small number of products drive the majority of sales.
-
-🛠️ Tech Stack
-PostgreSQL (psql shell) — data cleaning and SQL transformations
-
-Tableau Public — dashboards and KPI visualizations
-
-GitHub — documentation and version control
-
+Author: Ben Mihelic  Aug 25, 2025
