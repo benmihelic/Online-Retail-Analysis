@@ -1,10 +1,33 @@
 # Retail Sales Analysis with SQL and Tableau
 
-This project analyzes an [Online Retail dataset](https://archive.ics.uci.edu/ml/datasets/online+retail) using **PostgreSQL** for data preparation and **Tableau** for visualization.  
-The goal is to transform raw transaction data into clear business insights through **KPIs, dashboards, and visual analytics**.
+---
+## Project Overview
+
+This project analyzes an [Online Retail dataset](https://archive.ics.uci.edu/ml/datasets/online+retail) to uncover revenue trends, customer behavior, and sales performance across products and countries. Using **PostgreSQL** for data preparation and **Tableau** for visualization, I created an interactive dashboard highlighting key performance indicators (KPIs) and business insights.
+
+The goal of this project is to demonstrate my ability to:
+
+- Clean and aggregate raw transactional data using **SQL**  
+- Build calculated fields and KPIs for decision-making  
+- Design a clear, interactive Tableau dashboard for stakeholders  
+
+## Interactive Dashboard
+
+View the full interactive Tableau dashboard here:  
+[Tableau Public – Online Retail Dashboard](https://public.tableau.com/app/profile/ben.mihelic/viz/OnlineRetailAnalysis_17558674772550)
+
 
 ---
 
+
+
+## ⚙️ Tools & Technologies
+
+- **Dataset:** [UCI Machine Learning Repository – Online Retail Dataset](https://archive.ics.uci.edu/ml/datasets/online+retail)  
+- **PostgreSQL (psql shell):** data cleaning, joins, aggregation  
+- **SQL:** grouping, filtering, creating CSV extracts  
+- **Tableau Public:** visualization and dashboard design  
+- **GitHub:** project documentation and portfolio publishing  
 ## Project Workflow
 
 ### 1. Data Source
@@ -53,42 +76,29 @@ Example output:  monthly_revenue.csv viewed in LibreOffice
 
 ![screenshot of raw CSV](Screenshots/monthly_revenue.png)
 
-4. Tableau Visualizations
+### 4. Tableau Visualizations
 The CSVs were imported into Tableau to build interactive charts:
 
-Monthly Revenue (Line Chart)
+![screenshot of raw CSV](Screenshots/Monthly_Revenue_Graph.png)
 
-![screenshot of raw CSV](Screenshots/Monthly Revenue Graph.png)
+![screenshot of raw CSV](Screenshots/Average_Order_Total.png)
 
-Top 10 Products by Revenue (Bar Chart)
+![screenshot of raw CSV](Screenshots/Revenue_by_Product_Graph.png)
 
-![screenshot of raw CSV](Screenshots/Revenue by Product Graph.png)
-
-Top 10 Countries by Revenue (Bar Chart, excluding UK in KPI calc)
-
-![screenshot of raw CSV](Screenshots/Countries by Revenue Graph.png)
-
-Average Order Value (Line Chart)
-
-![screenshot of raw CSV](Screenshots/Average Order Total.png)
+![screenshot of raw CSV](Screenshots/Countries_by_Revenue_Graph.png)
 
 
-5. KPI Dashboard
+### 5. Key Performance Indicator (KPI) Dashboard
 Created a dashboard with 6 key KPIs across the top:
 
-Total Revenue
-
-Average Order Size
-
-Average Monthly Revenue
-
-Total Orders
-
-Average Country Revenue (excluding UK)
-
-Average Product Revenue
+Total Revenue, Average Order Size, Average Monthly Revenue, Total Orders, Average Country Revenue (excluding UK), Average Product Revenue
 
 Reference lines were added to highlight averages.
+
+Final Dashboard:
+
+![screenshot of raw CSV](Screenshots/Final_Product.png)
+
 
 
 🚀 Key Insights
